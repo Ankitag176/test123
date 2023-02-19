@@ -13,12 +13,73 @@ pipelines:
     language: python
     createdAt: '2023-02-19 19:58:39'
     datasets:
-      inputs: []
+      inputs:
+      - datasets/test1
       outputs: []
     dependencies: {}
-datasets: {}
+datasets:
+  datasets/test1:
+    name: test1
+    description: ''
+    author: suryansh@adobe.com
+    createdAt: '2023-02-19 20:44:07'
+    mode: batch
+    physicalDatasets:
+      SuryanshFarbric:
+        fabricId: 13
+        datasetType: File
+        description: ''
+        author: suryansh@adobe.com
+        createdAt: '2023-02-19 20:44:07'
 templates: {}
-jobs: {}
+jobs:
+  jobs/jobtest:
+    name: jobtest
+    description: ''
+    fabricUID: 4
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: small
+    scheduleCron: 0 0 0 1/1 * ? *
+    timeout: null
+    alerting:
+      emails: ankitagu@adobe.com
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines:
+    - pipelines/sur
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2023-02-19 21:14:04'
+    author: suryansh@adobe.com
+  jobs/surya:
+    name: surya
+    description: ''
+    fabricUID: 13
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: small
+    scheduleCron: 0 0 0 1/1 * ? *
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2023-02-19 21:41:27'
+    author: suryansh@adobe.com
 libraries: []
 subgraphs: {}
 sqlModels: {}
