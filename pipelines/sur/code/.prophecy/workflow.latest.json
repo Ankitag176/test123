@@ -61,8 +61,47 @@
     "sourcePort" : "9mzucByStANaiW6Z14iYy$$iDw8Th1mL9DThFobcG_NU",
     "target" : "MEWkerRhgAhBQTwncebmU$$GdsoFAqciO7QgGOSZvwbG",
     "targetPort" : "lY7-T_gPGC7ObahNwDVFQ$$ODPBHbeOunYhZn9W-eKb0"
+  }, {
+    "id" : "MAfH8WpgrDTTUO8fAiMg2",
+    "source" : "MEWkerRhgAhBQTwncebmU$$GdsoFAqciO7QgGOSZvwbG",
+    "sourcePort" : "YurxXld4-faQQT9A6h23d$$bKHItgavzcKWwVfBSxVhK",
+    "target" : "ZNPfQS8S9ROrQS0zvXrG8$$rwEk6upGKxYNSIcSxSHc2",
+    "targetPort" : "Q4GpSVNp_-JtOmMy6JZYX$$orc-ZFvudf94ZISWH06uR"
   } ],
   "processes" : {
+    "ZNPfQS8S9ROrQS0zvXrG8$$rwEk6upGKxYNSIcSxSHc2" : {
+      "id" : "ZNPfQS8S9ROrQS0zvXrG8$$rwEk6upGKxYNSIcSxSHc2",
+      "component" : "Filter",
+      "metadata" : {
+        "label" : "Filter_2",
+        "slug" : "Filter_2",
+        "x" : 860,
+        "y" : 260,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "Q4GpSVNp_-JtOmMy6JZYX$$orc-ZFvudf94ZISWH06uR",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "SUxq_euNzJz1pFzwyMRyD$$kmHzEWFVyHNz7_8exSPGo",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "condition" : {
+          "format" : "sql",
+          "expression" : "true"
+        }
+      }
+    },
     "f5XyF4WvFY49aBTIoMMf-$$dMegExZORcwCKlKaeQPgK" : {
       "id" : "f5XyF4WvFY49aBTIoMMf-$$dMegExZORcwCKlKaeQPgK",
       "component" : "Source",
@@ -120,36 +159,6 @@
         }
       }
     },
-    "Epe50GMyh0iKxE6J-HgVc$$_shHEaiCs2dU-t3TQopHZ" : {
-      "id" : "Epe50GMyh0iKxE6J-HgVc$$_shHEaiCs2dU-t3TQopHZ",
-      "component" : "OrderBy",
-      "metadata" : {
-        "label" : "OrderBy_1",
-        "slug" : "OrderBy_1",
-        "x" : 480,
-        "y" : 200,
-        "phase" : 0,
-        "cache" : false,
-        "detailedStats" : false,
-        "isImported" : false
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "S-fqm7eqXwIf0bgZuaxKz$$vazhdLNeoO8YSOnT-nuWt",
-          "slug" : "in0"
-        } ],
-        "outputs" : [ {
-          "id" : "9mzucByStANaiW6Z14iYy$$iDw8Th1mL9DThFobcG_NU",
-          "slug" : "out"
-        } ],
-        "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false
-      },
-      "properties" : {
-        "columnsSelector" : [ ],
-        "orders" : [ ]
-      }
-    },
     "MEWkerRhgAhBQTwncebmU$$GdsoFAqciO7QgGOSZvwbG" : {
       "id" : "MEWkerRhgAhBQTwncebmU$$GdsoFAqciO7QgGOSZvwbG",
       "component" : "Reformat",
@@ -178,6 +187,36 @@
       "properties" : {
         "columnsSelector" : [ ],
         "expressions" : [ ]
+      }
+    },
+    "Epe50GMyh0iKxE6J-HgVc$$_shHEaiCs2dU-t3TQopHZ" : {
+      "id" : "Epe50GMyh0iKxE6J-HgVc$$_shHEaiCs2dU-t3TQopHZ",
+      "component" : "OrderBy",
+      "metadata" : {
+        "label" : "OrderBy_1",
+        "slug" : "OrderBy_1",
+        "x" : 480,
+        "y" : 200,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "S-fqm7eqXwIf0bgZuaxKz$$vazhdLNeoO8YSOnT-nuWt",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "9mzucByStANaiW6Z14iYy$$iDw8Th1mL9DThFobcG_NU",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "orders" : [ ]
       }
     }
   },
