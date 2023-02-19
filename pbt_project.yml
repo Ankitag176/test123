@@ -1,6 +1,6 @@
 name: jjkhjj
 description: ''
-version: 0.0.1-SNAPSHOT
+version: '11'
 author: suryansh@adobe.com
 language: python
 buildSystem: wheel
