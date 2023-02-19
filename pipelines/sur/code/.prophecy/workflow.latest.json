@@ -67,6 +67,12 @@
     "sourcePort" : "YurxXld4-faQQT9A6h23d$$bKHItgavzcKWwVfBSxVhK",
     "target" : "ZNPfQS8S9ROrQS0zvXrG8$$rwEk6upGKxYNSIcSxSHc2",
     "targetPort" : "Q4GpSVNp_-JtOmMy6JZYX$$orc-ZFvudf94ZISWH06uR"
+  }, {
+    "id" : "WylTtGrYCn-oQeJyg1x09",
+    "source" : "ZNPfQS8S9ROrQS0zvXrG8$$rwEk6upGKxYNSIcSxSHc2",
+    "sourcePort" : "SUxq_euNzJz1pFzwyMRyD$$kmHzEWFVyHNz7_8exSPGo",
+    "target" : "xnOJE7v3bugRgwQQxc4vU$$TfL2qAsKMdx-l-2tcY1D1",
+    "targetPort" : "Bm_T47NZFAkn3JNaQlWxz$$l_oZQmIBZL1b3AuQt5nSl"
   } ],
   "processes" : {
     "ZNPfQS8S9ROrQS0zvXrG8$$rwEk6upGKxYNSIcSxSHc2" : {
@@ -125,6 +131,38 @@
         "isCustomOutputSchema" : false
       },
       "properties" : { }
+    },
+    "xnOJE7v3bugRgwQQxc4vU$$TfL2qAsKMdx-l-2tcY1D1" : {
+      "id" : "xnOJE7v3bugRgwQQxc4vU$$TfL2qAsKMdx-l-2tcY1D1",
+      "component" : "SetOperation",
+      "metadata" : {
+        "label" : "SetOperation_1",
+        "slug" : "SetOperation_1",
+        "x" : 1040,
+        "y" : 280,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "pyXZWkjEGL0sb8KHKH_8z$$S4H4A0TS52ni3VveRNrIc",
+          "slug" : "in0"
+        }, {
+          "id" : "Bm_T47NZFAkn3JNaQlWxz$$l_oZQmIBZL1b3AuQt5nSl",
+          "slug" : "in1"
+        } ],
+        "outputs" : [ {
+          "id" : "n-3-gDyHvMNmVjcmkNuNx$$P-VwNXfG69e7swrhY6snn",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "operationType" : "unionAll"
+      }
     },
     "2hLwJ_0I107whl2F8RxrV$$m_LD9sSoErXF6PpiEQ7Pp" : {
       "id" : "2hLwJ_0I107whl2F8RxrV$$m_LD9sSoErXF6PpiEQ7Pp",
