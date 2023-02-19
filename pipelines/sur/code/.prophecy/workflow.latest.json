@@ -43,7 +43,13 @@
     },
     "topLevelPackage" : "sur"
   },
-  "connections" : [ ],
+  "connections" : [ {
+    "id" : "l-ZuBZpqu36oMO_bwOJq3",
+    "source" : "f5XyF4WvFY49aBTIoMMf-$$dMegExZORcwCKlKaeQPgK",
+    "sourcePort" : "-2G25n1DMJoo5fC-sEmMC$$Rw1VogUIc5SYSZ4uzreKc",
+    "target" : "2hLwJ_0I107whl2F8RxrV$$m_LD9sSoErXF6PpiEQ7Pp",
+    "targetPort" : "jak64UTjVCB9inwnMsAx1$$mFXqCxlfY1TbCQq01J-S6"
+  } ],
   "processes" : {
     "f5XyF4WvFY49aBTIoMMf-$$dMegExZORcwCKlKaeQPgK" : {
       "id" : "f5XyF4WvFY49aBTIoMMf-$$dMegExZORcwCKlKaeQPgK",
@@ -69,6 +75,39 @@
         "isCustomOutputSchema" : false
       },
       "properties" : { }
+    },
+    "2hLwJ_0I107whl2F8RxrV$$m_LD9sSoErXF6PpiEQ7Pp" : {
+      "id" : "2hLwJ_0I107whl2F8RxrV$$m_LD9sSoErXF6PpiEQ7Pp",
+      "component" : "Filter",
+      "metadata" : {
+        "label" : "Filter_1",
+        "slug" : "Filter_1",
+        "x" : 280,
+        "y" : 160,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "jak64UTjVCB9inwnMsAx1$$mFXqCxlfY1TbCQq01J-S6",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "ZZ8JKpIqxuNEOwp50SlbJ$$x8tq85lwSQYmcU8YbWMX9",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "condition" : {
+          "format" : "sql",
+          "expression" : "true"
+        }
+      }
     }
   },
   "ports" : {
